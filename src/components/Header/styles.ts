@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { AiOutlineSearch, AiOutlineGift } from 'react-icons/ai';
-import { BsBell } from "react-icons/bs";
+import { GoBell } from "react-icons/go";
 
 export const Content = styled.div`
   position: fixed;
@@ -8,7 +8,7 @@ export const Content = styled.div`
   width: 100%;
   height: 60px;
   padding:  0 45px;
-  background-color: rgb(20, 20, 20);
+  background-color: transparent;
 
 
   display: flex;
@@ -53,22 +53,22 @@ export const Utilities = styled.div`
 
 export const SearchIcon = styled(AiOutlineSearch)`
     
-    height: 7vh;
-    width: 2vw;
+    height: 5vh;
+    width: 1.5vw;
     cursor: pointer;
     
 `;
 
 export const GiftIcon = styled(AiOutlineGift)`
     
-    height: 7vh;
-    width: 2vw;
+    height: 5vh;
+    width: 1.5vw;
     cursor: pointer;
 `;
 
-export const BellIcon = styled(BsBell)`
-    height: 7vh;
-    width: 2vw;
+export const BellIcon = styled(GoBell)`
+    height: 5vh;
+    width: 1.5vw;
     cursor: pointer;
 `;
 

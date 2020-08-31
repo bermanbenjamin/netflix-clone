@@ -6,7 +6,6 @@ export default createGlobalStyle`
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    background: #141414;
      }
 
     *, button, input{
@@ -21,10 +20,8 @@ export default createGlobalStyle`
         font-size: 100%;
         line-height: 1.2;
         user-select: none;
+        overflow-x: hidden;
         cursor: default;
     }
 
-    main{
-        padding-top: 60px;
-    }
 `;

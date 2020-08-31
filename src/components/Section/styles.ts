@@ -5,9 +5,9 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin: 0 0 1em 0;
+  margin: 0 0 0.6em 0;
 `;
 
 export const ListItem = styled.ul`
@@ -16,9 +16,9 @@ export const ListItem = styled.ul`
 `;
 
 export const Item = styled.img`
-  height: 9em;
-  width: 16em;
-  margin-right: 1.5em;
+  height: 8em;
+  width: 14em;
+  margin-right: 0.3em;
   cursor: pointer;
 
   :hover{

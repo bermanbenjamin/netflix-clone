@@ -3,7 +3,7 @@ import { Title, Content, ListItem, Item } from './styles';
 
 interface Props{
     title: string;
-    films: { image: string; }[];
+    films: { image: string; link: string}[];
 };
 
 

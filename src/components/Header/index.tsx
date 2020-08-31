@@ -2,17 +2,18 @@ import React from 'react';
 
 import LogoImage from '../../assets/Logo.png';
 import { Content, Logo, NaviBar, Utilities, SearchIcon, GiftIcon, ProfileIcon, BellIcon } from './styles';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
       <Content>
           <Logo src={LogoImage} alt="Benjaflix" />
           <NaviBar>
-            <a href="/">Início</a>
-            <a href="/">Séries</a>
-            <a href="/">Filmes</a>
-            <a href="/">Mais recomendados</a>
-            <a href="/">Minha lista</a>
+            <Link to="/">Início</Link>
+            <Link to="/series">Séries</Link>
+            <Link to="/">Filmes</Link>
+            <Link to="/">Mais recomendados</Link>
+            <Link to="/">Minha lista</Link>
           </NaviBar>
           <Utilities>
             <SearchIcon to=""/>
