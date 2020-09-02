@@ -14,9 +14,10 @@ export const Content = styled.div`
   display: flex;
   align-items:center;
 
-  @media (max-width: 700px) {
-    justify-content: space-between;
+  .black{
+    background-color: #141414;
   }
+
 
 `;
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import GlobalStyles from '../../styles/GlobalStyles';
 import Header from '../../components/Header/';
 import Section from '../../components/Section';
 import Banner from '../../components/Banner';
@@ -11,7 +10,7 @@ export default function HomePage() {
         <>
         <Header />
         <main>
-          <Banner/>
+          <Banner />
           {
             section.map(section => (
               <Section title={section.title} films={section.items} />
@@ -19,7 +18,6 @@ export default function HomePage() {
           }
         </main>
 
-        < GlobalStyles />
         </>
     )
 }

@@ -6,7 +6,7 @@ export default createGlobalStyle`
     margin: 0;
     border: 0;
     box-sizing: border-box;
-     }
+    }
 
     *, button, input{
         font-family: Helvetica, sans-serif, sans-serif;

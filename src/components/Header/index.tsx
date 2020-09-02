@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import LogoImage from '../../assets/Logo.png';
 import { Content, Logo, NaviBar, Utilities, SearchIcon, GiftIcon, ProfileIcon, BellIcon } from './styles';
 import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
+  
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if(window.scrollY > 100){
+        setShow(true);
+      }else setShow(false);
+    })
+  }, [])
+
+
   return (
-      <Content>
+      <Content className={`${show && "black"}`}>
           <Logo src={LogoImage} alt="Benjaflix" />
           <NaviBar>
             <Link to="/">Início</Link>
-            <Link to="/series">Séries</Link>
+            <Link to="/">Séries</Link>
             <Link to="/">Filmes</Link>
             <Link to="/">Mais recomendados</Link>
             <Link to="/">Minha lista</Link>

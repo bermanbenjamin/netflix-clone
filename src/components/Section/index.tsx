@@ -1,4 +1,4 @@
-import React, { ReactPropTypes } from 'react';
+import React from 'react';
 import { Title, Content, ListItem, Item } from './styles';
 
 interface Props{
